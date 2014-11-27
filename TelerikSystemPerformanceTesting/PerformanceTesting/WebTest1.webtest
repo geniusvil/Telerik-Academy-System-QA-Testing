@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebTest Name="WebTest1" Id="01645859-20bb-44aa-bd88-a80477435bb7" Owner="" Priority="2147483647" Enabled="True" CssProjectStructure="" CssIteration="" Timeout="0" WorkItemIds="" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010" Description="" CredentialUserName="" CredentialPassword="" PreAuthenticate="True" Proxy="default" StopOnError="False" RecordedResultFile="WebTest1.f3629999-4031-4c53-be44-95b552b87f45.rec.webtestresult" ResultsLocale="">
+  <Items>
+    <Request Method="GET" Guid="ed102e65-6f69-4aa4-8e56-73d224cbdfaf" Version="1.1" Url="http://test.telerikacademy.com/Users/Auth/Login" ThinkTime="1" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://test.telerikacademy.com/" />
+      </Headers>
+    </Request>
+    <Request Method="POST" Guid="0398ff77-ffb1-4008-88cf-d1a590b9ffed" Version="1.1" Url="http://test.telerikacademy.com/Users/Auth/Login" ThinkTime="1" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="http://test.telerikacademy.com/" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://test.telerikacademy.com/Users/Auth/Login" />
+      </Headers>
+      <FormPostHttpBody>
+        <FormPostParameter Name="UsernameOrEmail" Value="ccccc" RecordedValue="ccccc" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="Password" Value="123456" RecordedValue="123456" CorrelationBinding="" UrlEncode="True" />
+      </FormPostHttpBody>
+    </Request>
+    <Request Method="GET" Guid="f43f52ee-1023-49a0-86ba-72fae107ccc0" Version="1.1" Url="http://test.telerikacademy.com/Users/Profile/Settings" ThinkTime="1" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://test.telerikacademy.com/" />
+      </Headers>
+    </Request>
+    <Request Method="GET" Guid="614db78c-9025-4d4a-99a1-ef9692593150" Version="1.1" Url="http://test.telerikacademy.com/Users/Avatars" ThinkTime="1" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://test.telerikacademy.com/Users/Profile/Settings" />
+      </Headers>
+    </Request>
+    <Request Method="POST" Guid="2413a1c6-19e3-4faf-80b6-bf0a81b10fdd" Version="1.1" Url="http://test.telerikacademy.com/Users/Avatars/Upload" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://test.telerikacademy.com/Users/Avatars" />
+      </Headers>
+      <FormPostHttpBody>
+        <FileUploadParameter Name="AvatarImage" FileName="images.jpg" ContentType="image/jpeg" GenerateUniqueName="True" UseGuids="False" FileUploadName="" HtmlEncodeFileName="True" />
+      </FormPostHttpBody>
+    </Request>
+    <Request Method="POST" Guid="672a515d-ad66-43bf-8d3a-4daa47df5474" Version="1.1" Url="http://test.telerikacademy.com/Users/Avatars/Resize" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="*/*" />
+        <Header Name="X-Requested-With" Value="XMLHttpRequest" />
+        <Header Name="Referer" Value="http://test.telerikacademy.com/Users/Avatars" />
+      </Headers>
+      <CorrelationExtractionRules>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam1.AvatarId" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="-id=&quot;" />
+            <RuleParameter Name="EndsWith" Value="&quot; id=" />
+            <RuleParameter Name="Index" Value="0" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam3.AvatarId" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="-id=&quot;" />
+            <RuleParameter Name="EndsWith" Value="&quot; id=" />
+            <RuleParameter Name="Index" Value="0" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam5.id" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="-id=&quot;" />
+            <RuleParameter Name="EndsWith" Value="&quot; id=" />
+            <RuleParameter Name="Index" Value="0" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+      </CorrelationExtractionRules>
+      <FormPostHttpBody>
+        <FormPostParameter Name="id" Value="49" RecordedValue="49" CorrelationBinding="" UrlEncode="True" />
+      </FormPostHttpBody>
+    </Request>
+    <Request Method="POST" Guid="e8d65cfb-2828-47b9-8466-cfcc2553e380" Version="1.1" Url="http://test.telerikacademy.com/Users/Avatars/ResizeAvatar" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="*/*" />
+        <Header Name="X-Requested-With" Value="XMLHttpRequest" />
+        <Header Name="Referer" Value="http://test.telerikacademy.com/Users/Avatars" />
+      </Headers>
+      <FormPostHttpBody>
+        <FormPostParameter Name="x" Value="36" RecordedValue="36" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="y" Value="0" RecordedValue="0" CorrelationBinding="{{FormPostParam2.y}}" UrlEncode="True" />
+        <FormPostParameter Name="x2" Value="227" RecordedValue="227" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="y2" Value="191" RecordedValue="191" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="w" Value="191" RecordedValue="191" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="h" Value="191" RecordedValue="191" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="AvatarId" Value="49" RecordedValue="49" CorrelationBinding="{{FormPostParam1.AvatarId}}" UrlEncode="True" />
+      </FormPostHttpBody>
+    </Request>
+    <Request Method="POST" Guid="41c6918f-cb5c-43ed-94fc-d3bb65d5fe51" Version="1.1" Url="http://test.telerikacademy.com/Users/Avatars/AvatarsRead" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="*/*" />
+        <Header Name="X-Requested-With" Value="XMLHttpRequest" />
+        <Header Name="Referer" Value="http://test.telerikacademy.com/Users/Avatars" />
+      </Headers>
+      <FormPostHttpBody>
+        <FormPostParameter Name="sort" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="group" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="filter" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+      </FormPostHttpBody>
+    </Request>
+    <Request Method="POST" Guid="7306e341-7fb7-4e9b-a2a6-79ffc532a499" Version="1.1" Url="http://test.telerikacademy.com/Users/Avatars/ResizeAvatar" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="*/*" />
+        <Header Name="X-Requested-With" Value="XMLHttpRequest" />
+        <Header Name="Referer" Value="http://test.telerikacademy.com/Users/Avatars" />
+      </Headers>
+      <FormPostHttpBody>
+        <FormPostParameter Name="x" Value="36" RecordedValue="36" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="y" Value="0" RecordedValue="0" CorrelationBinding="{{FormPostParam4.y}}" UrlEncode="True" />
+        <FormPostParameter Name="x2" Value="227" RecordedValue="227" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="y2" Value="191" RecordedValue="191" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="w" Value="191" RecordedValue="191" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="h" Value="191" RecordedValue="191" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="AvatarId" Value="49" RecordedValue="49" CorrelationBinding="{{FormPostParam3.AvatarId}}" UrlEncode="True" />
+      </FormPostHttpBody>
+    </Request>
+    <Request Method="POST" Guid="f2c9ddd7-71c4-4cf4-98cd-e8f18a51c176" Version="1.1" Url="http://test.telerikacademy.com/Users/Avatars/SetDefault" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="*/*" />
+        <Header Name="X-Requested-With" Value="XMLHttpRequest" />
+        <Header Name="Referer" Value="http://test.telerikacademy.com/Users/Avatars" />
+      </Headers>
+      <FormPostHttpBody>
+        <FormPostParameter Name="id" Value="49" RecordedValue="49" CorrelationBinding="{{FormPostParam5.id}}" UrlEncode="True" />
+      </FormPostHttpBody>
+    </Request>
+    <Request Method="POST" Guid="e0b4cd01-60e9-4bec-b1be-37eec116667e" Version="1.1" Url="http://test.telerikacademy.com/Users/Avatars/AvatarsRead" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="*/*" />
+        <Header Name="X-Requested-With" Value="XMLHttpRequest" />
+        <Header Name="Referer" Value="http://test.telerikacademy.com/Users/Avatars" />
+      </Headers>
+      <FormPostHttpBody>
+        <FormPostParameter Name="sort" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="group" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="filter" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+      </FormPostHttpBody>
+    </Request>
+  </Items>
+  <ValidationRules>
+    <ValidationRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ValidateResponseUrl, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" DisplayName="Response URL" Description="Validates that the response URL after redirects are followed is the same as the recorded response URL.  QueryString parameters are ignored." Level="Low" ExectuionOrder="BeforeDependents" />
+    <ValidationRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ValidationRuleResponseTimeGoal, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" DisplayName="Response Time Goal" Description="Validates that the response time for the request is less than or equal to the response time goal as specified on the request.  Response time goals of zero will be ignored." Level="Low" ExectuionOrder="AfterDependents">
+      <RuleParameters>
+        <RuleParameter Name="Tolerance" Value="0" />
+      </RuleParameters>
+    </ValidationRule>
+  </ValidationRules>
+</WebTest>
